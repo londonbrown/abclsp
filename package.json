@@ -1,0 +1,26 @@
+{
+  "name": "abclsp",
+  "version": "0.0.1",
+  "description": "Language Server Protocol for ABC Notation",
+  "scripts": {
+    "hello": "echo \"Hello, world\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/londonbrown/abclsp.git"
+  },
+  "keywords": [
+    "abc",
+    "music",
+    "lsp",
+    "vscode",
+    "abcnotation",
+    "markup"
+  ],
+  "author": "londonbrown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/londonbrown/abclsp/issues"
+  },
+  "homepage": "https://github.com/londonbrown/abclsp#readme"
+}
