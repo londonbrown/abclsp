@@ -5,6 +5,8 @@
   "scripts": {
     "format": "npx prettier . --write",
     "format-check": "npx prettier . --check",
+    "lint": "npx eslint",
+    "build": "npm run format-check && npm run lint",
     "hello": "echo \"Hello, world\""
   },
   "repository": {
@@ -26,6 +28,10 @@
   },
   "homepage": "https://github.com/londonbrown/abclsp#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
     "prettier": "3.2.5"
   }
 }
