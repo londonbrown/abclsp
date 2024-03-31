@@ -6,8 +6,9 @@
     "format": "npx prettier . --write",
     "format-check": "npx prettier . --check",
     "lint": "npx eslint",
-    "build": "npm run format-check && npm run lint",
-    "hello": "echo \"Hello, world\""
+    "build": "npm run lint && npm run format-check",
+    "hello": "echo \"Hello, world\"",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,14 @@
     "@typescript-eslint/parser": "^7.4.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "3.2.5"
+  },
+  "lint-staged": {
+    "**/*": [
+      "eslint",
+      "prettier --write --ignore-unknown"
+    ]
   }
 }
