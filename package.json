@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Language Server Protocol for ABC Notation",
   "scripts": {
+    "format": "npx prettier . --write",
+    "format-check": "npx prettier . --check",
     "hello": "echo \"Hello, world\""
   },
   "repository": {
@@ -22,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/londonbrown/abclsp/issues"
   },
-  "homepage": "https://github.com/londonbrown/abclsp#readme"
+  "homepage": "https://github.com/londonbrown/abclsp#readme",
+  "devDependencies": {
+    "prettier": "3.2.5"
+  }
 }
